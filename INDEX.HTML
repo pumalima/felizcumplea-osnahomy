@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños Nahomi 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: linear-gradient(180deg, #ffe6f0, #e0f7ff);
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5em;
+      color: #d63384;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #444;
+      margin: 10px auto;
+      width: 90%;
+      line-height: 1.5em;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 26px;
+      font-size: 1.2em;
+      background: #ff66b2;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ff85c1;
+    }
+
+    .regalo {
+      margin-top: 30px;
+      display: none;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .torta {
+      font-size: 80px;
+      animation: bounce 1.5s infinite alternate ease-in-out;
+    }
+
+    .unicornio {
+      font-size: 80px;
+      display: inline-block;
+      margin: 10px;
+      animation: fly 3s infinite ease-in-out;
+    }
+
+    .flores {
+      font-size: 60px;
+      animation: swing 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes bounce {
+      from {transform: translateY(0);}
+      to {transform: translateY(-20px);}
+    }
+
+    @keyframes fly {
+      0% { transform: translateX(-30px) rotate(-5deg); }
+      50% { transform: translateX(30px) rotate(5deg); }
+      100% { transform: translateX(-30px) rotate(-5deg); }
+    }
+
+    @keyframes swing {
+      from { transform: rotate(-10deg); }
+      to { transform: rotate(10deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Feliz Cumpleaños Nahomy 🎂</h1>
+
+  <p>Hoy celebramos tu día especial ✨</p>
+  <p>Eres una amiga única y maravillosa 💕</p>
+  <p>Que tu vida se llene de colores, alegría y sueños cumplidos 🌈</p>
+  <p>Siempre estaré a tu lado 🤗</p>
+
+  <button class="btn" onclick="mostrarRegalo()">🎁 Ver Sorpresa</button>
+
+  <div id="regalo" class="regalo">
+    <div class="torta">🎂</div>
+    <div>
+      <span class="unicornio">🦄</span>
+      <span class="unicornio">🦄</span>
+    </div>
+    <div class="flores">🌸🌼🌹🌺🌻</div>
+
+    <p style="font-size:1.3em; color:#d63384;">
+      Que la magia de los unicornios 🦄 y la belleza de las flores 🌸 iluminen siempre tu vida 💖
+    </p>
+
+    <!-- Música de cumpleaños -->
+    <audio id="musica" controls autoplay loop>
+      <source src="Parchís - Cumpleaños feliz.mp3" type="audio/mpeg">
+      Tu navegador no soporta el audio.
+    </audio>
+  </div>
+
+  <script>
+    function mostrarRegalo(){
+      document.getElementById("regalo").style.display = "block";
+      document.getElementById("musica").play();
+    }
+  </script>
+</body>
+</html>
